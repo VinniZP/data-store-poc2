@@ -1,2 +1,15 @@
-<vinni-components-nx-welcome></vinni-components-nx-welcome>
-<router-outlet></router-outlet>
+<button (click)="logData()">asd</button>
+<button (click)="prev()">Prev</button>
+<button (click)="next()">Next</button>
+<hr>
+<button (click)="toggleSort('id')">id</button>
+<button (click)="toggleSort('title')">title</button>
+<button (click)="toggleSort('completed')">completed</button>
+<pre>{{dataSource.meta()|json}}</pre>
+<p>Current page: {{dataSource.meta().page}}</p>
+<ul>
+  <li *ngFor="let item of dataSource.data()">{{item.title}} {{item.completed}}</li>
+</ul>
+<pre>
+  {{dataSource.data()|json}}
+</pre>

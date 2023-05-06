@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "vinni-components",
+  "npmScope": "vc",
   "affected": {
     "defaultBase": "master"
   },
