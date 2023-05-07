@@ -10,9 +10,7 @@ export class RouterPersistStorage implements PersistStorage {
 
   get(prefix: string) {
     const data: any = {};
-    console.log(location.search);
     const params = new URLSearchParams(location.search);
-    console.log(params);
     params.forEach((value, key) => {
       // parse key string and dot set value in data
       const keys = [...key.split('.')];

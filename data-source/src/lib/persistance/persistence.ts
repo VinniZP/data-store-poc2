@@ -20,7 +20,6 @@ export function persist<T extends Persistable[]>(
   ...persistables: T
 ) {
   const data = config.storage.get(config.key);
-  console.log('12312313zs', data);
   if (data) {
     persistables.forEach((persistable) => {
       if (data[persistable.persistKey]) {

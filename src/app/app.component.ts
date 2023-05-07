@@ -57,9 +57,10 @@ export class AppComponent {
       {
         key: 'test',
         storage: this.storage,
-        debounce: 1000
+        debounce: 100
       },
-      this.pagination
+      this.pagination,
+      this.sort
     );
   }
 
